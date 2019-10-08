@@ -1,0 +1,463 @@
+EESchema Schematic File Version 4
+LIBS:DuinoCon-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS165 U0
+U 1 1 5C3DB33A
+P 7650 2600
+AR Path="/5C3CC8C7/5C3DB33A" Ref="U0"  Part="1" 
+AR Path="/5C3DAC44/5C3DB33A" Ref="U?"  Part="1" 
+F 0 "U0" H 7750 2350 50  0000 C CNN
+F 1 "74LS165" H 7750 2250 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_with_DIP" H 7650 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS165" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C3DB33B
+P 7650 3600
+AR Path="/5C3CC8C7/5C3DB33B" Ref="#PWR09"  Part="1" 
+AR Path="/5C3DAC44/5C3DB33B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR09" H 7650 3350 50  0001 C CNN
+F 1 "GND" H 7655 3427 50  0000 C CNN
+F 2 "" H 7650 3600 50  0001 C CNN
+F 3 "" H 7650 3600 50  0001 C CNN
+	1    7650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5C3DB33C
+P 7650 1700
+AR Path="/5C3CC8C7/5C3DB33C" Ref="#PWR08"  Part="1" 
+AR Path="/5C3DAC44/5C3DB33C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR08" H 7650 1550 50  0001 C CNN
+F 1 "+5V" H 7665 1873 50  0000 C CNN
+F 2 "" H 7650 1700 50  0001 C CNN
+F 3 "" H 7650 1700 50  0001 C CNN
+	1    7650 1700
+	1    0    0    -1  
+$EndComp
+Text HLabel 7150 2000 0    50   Input ~ 0
+Shift_Register1_Serial_Out
+Text HLabel 8150 2000 2    50   Output ~ 0
+Shift_Register0_Serial_Out
+Text HLabel 7150 3000 0    50   Input ~ 0
+Parallel_Load
+Text HLabel 7150 3300 0    50   Input ~ 0
+Clock_Enable
+Text HLabel 7150 3200 0    50   Input ~ 0
+Clock_Pin
+NoConn ~ 8150 2100
+$Comp
+L Switch:SW_Push SW0
+U 1 1 5C3DB33D
+P 5450 2100
+AR Path="/5C3CC8C7/5C3DB33D" Ref="SW0"  Part="1" 
+AR Path="/5C3DAC44/5C3DB33D" Ref="SW?"  Part="1" 
+F 0 "SW0" H 5050 2200 50  0000 C CNN
+F 1 "SW_Push" H 5050 2100 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 2300 50  0001 C CNN
+F 3 "" H 5450 2300 50  0001 C CNN
+	1    5450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR00
+U 1 1 5C3DB33E
+P 5250 1700
+AR Path="/5C3CC8C7/5C3DB33E" Ref="#PWR00"  Part="1" 
+AR Path="/5C3DAC44/5C3DB33E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR00" H 5250 1550 50  0001 C CNN
+F 1 "+5V" H 5265 1873 50  0000 C CNN
+F 2 "" H 5250 1700 50  0001 C CNN
+F 3 "" H 5250 1700 50  0001 C CNN
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2100 5250 1700
+Wire Wire Line
+	7150 2100 5650 2100
+$Comp
+L Device:R_US R0
+U 1 1 5C3CD364
+P 5800 2250
+AR Path="/5C3CC8C7/5C3CD364" Ref="R0"  Part="1" 
+AR Path="/5C3DAC44/5C3CD364" Ref="R?"  Part="1" 
+F 0 "R0" V 5700 2200 50  0000 C CNN
+F 1 "10k" V 5700 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 2240 50  0001 C CNN
+F 3 "~" H 5800 2250 50  0001 C CNN
+	1    5800 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2100 5650 2250
+$Comp
+L power:GND #PWR01
+U 1 1 5C3CD53D
+P 5950 2250
+AR Path="/5C3CC8C7/5C3CD53D" Ref="#PWR01"  Part="1" 
+AR Path="/5C3DAC44/5C3CD53D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR01" H 5950 2000 50  0001 C CNN
+F 1 "GND" V 5955 2122 50  0000 R CNN
+F 2 "" H 5950 2250 50  0001 C CNN
+F 3 "" H 5950 2250 50  0001 C CNN
+	1    5950 2250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 2100
+$Comp
+L Device:R_US R1
+U 1 1 5C3DB341
+P 5800 2500
+AR Path="/5C3CC8C7/5C3DB341" Ref="R1"  Part="1" 
+AR Path="/5C3DAC44/5C3DB341" Ref="R?"  Part="1" 
+F 0 "R1" V 5700 2450 50  0000 C CNN
+F 1 "10k" V 5700 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 2490 50  0001 C CNN
+F 3 "~" H 5800 2500 50  0001 C CNN
+	1    5800 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C3DB342
+P 5450 2350
+AR Path="/5C3CC8C7/5C3DB342" Ref="SW1"  Part="1" 
+AR Path="/5C3DAC44/5C3DB342" Ref="SW?"  Part="1" 
+F 0 "SW1" H 5050 2450 50  0000 C CNN
+F 1 "SW_Push" H 5050 2350 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 2550 50  0001 C CNN
+F 3 "" H 5450 2550 50  0001 C CNN
+	1    5450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C3DB343
+P 5950 2500
+AR Path="/5C3CC8C7/5C3DB343" Ref="#PWR02"  Part="1" 
+AR Path="/5C3DAC44/5C3DB343" Ref="#PWR?"  Part="1" 
+F 0 "#PWR02" H 5950 2250 50  0001 C CNN
+F 1 "GND" V 5955 2372 50  0000 R CNN
+F 2 "" H 5950 2500 50  0001 C CNN
+F 3 "" H 5950 2500 50  0001 C CNN
+	1    5950 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 2200 6250 2350
+Wire Wire Line
+	6250 2350 5650 2350
+Wire Wire Line
+	6250 2200 7150 2200
+Wire Wire Line
+	5650 2500 5650 2350
+Connection ~ 5650 2350
+Connection ~ 5250 2100
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5C3DB344
+P 5450 2600
+AR Path="/5C3CC8C7/5C3DB344" Ref="SW2"  Part="1" 
+AR Path="/5C3DAC44/5C3DB344" Ref="SW?"  Part="1" 
+F 0 "SW2" H 5050 2700 50  0000 C CNN
+F 1 "SW_Push" H 5050 2600 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 2800 50  0001 C CNN
+F 3 "" H 5450 2800 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5C3DB345
+P 5450 2850
+AR Path="/5C3CC8C7/5C3DB345" Ref="SW3"  Part="1" 
+AR Path="/5C3DAC44/5C3DB345" Ref="SW?"  Part="1" 
+F 0 "SW3" H 5050 2950 50  0000 C CNN
+F 1 "SW_Push" H 5050 2850 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 3050 50  0001 C CNN
+F 3 "" H 5450 3050 50  0001 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5C3DB346
+P 5450 3500
+AR Path="/5C3CC8C7/5C3DB346" Ref="SW5"  Part="1" 
+AR Path="/5C3DAC44/5C3DB346" Ref="SW?"  Part="1" 
+F 0 "SW5" H 5050 3600 50  0000 C CNN
+F 1 "SW_Push" H 5050 3500 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 3700 50  0001 C CNN
+F 3 "" H 5450 3700 50  0001 C CNN
+	1    5450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5C3DB347
+P 5450 3750
+AR Path="/5C3CC8C7/5C3DB347" Ref="SW6"  Part="1" 
+AR Path="/5C3DAC44/5C3DB347" Ref="SW?"  Part="1" 
+F 0 "SW6" H 5050 3850 50  0000 C CNN
+F 1 "SW_Push" H 5050 3750 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 3950 50  0001 C CNN
+F 3 "" H 5450 3950 50  0001 C CNN
+	1    5450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5C3CDBEA
+P 5450 4000
+AR Path="/5C3CC8C7/5C3CDBEA" Ref="SW7"  Part="1" 
+AR Path="/5C3DAC44/5C3CDBEA" Ref="SW?"  Part="1" 
+F 0 "SW7" H 5050 4100 50  0000 C CNN
+F 1 "SW_Push" H 5050 4000 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_8mm" H 5450 4200 50  0001 C CNN
+F 3 "" H 5450 4200 50  0001 C CNN
+	1    5450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5C3CDD48
+P 5800 2750
+AR Path="/5C3CC8C7/5C3CDD48" Ref="R2"  Part="1" 
+AR Path="/5C3DAC44/5C3CDD48" Ref="R?"  Part="1" 
+F 0 "R2" V 5700 2700 50  0000 C CNN
+F 1 "10k" V 5700 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 2740 50  0001 C CNN
+F 3 "~" H 5800 2750 50  0001 C CNN
+	1    5800 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5C3CDD74
+P 5800 3000
+AR Path="/5C3CC8C7/5C3CDD74" Ref="R3"  Part="1" 
+AR Path="/5C3DAC44/5C3CDD74" Ref="R?"  Part="1" 
+F 0 "R3" V 5700 2950 50  0000 C CNN
+F 1 "10k" V 5700 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 2990 50  0001 C CNN
+F 3 "~" H 5800 3000 50  0001 C CNN
+	1    5800 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5C3DB34B
+P 5800 3650
+AR Path="/5C3CC8C7/5C3DB34B" Ref="R5"  Part="1" 
+AR Path="/5C3DAC44/5C3DB34B" Ref="R?"  Part="1" 
+F 0 "R5" V 5700 3600 50  0000 C CNN
+F 1 "10k" V 5700 3750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 3640 50  0001 C CNN
+F 3 "~" H 5800 3650 50  0001 C CNN
+	1    5800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 5C3CE01D
+P 5800 3900
+AR Path="/5C3CC8C7/5C3CE01D" Ref="R6"  Part="1" 
+AR Path="/5C3DAC44/5C3CE01D" Ref="R?"  Part="1" 
+F 0 "R6" V 5700 3850 50  0000 C CNN
+F 1 "10k" V 5700 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 3890 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5C3CE177
+P 5800 4150
+AR Path="/5C3CC8C7/5C3CE177" Ref="R7"  Part="1" 
+AR Path="/5C3DAC44/5C3CE177" Ref="R?"  Part="1" 
+F 0 "R7" V 5700 4100 50  0000 C CNN
+F 1 "10k" V 5700 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5840 4140 50  0001 C CNN
+F 3 "~" H 5800 4150 50  0001 C CNN
+	1    5800 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C3CE29A
+P 5950 2750
+AR Path="/5C3CC8C7/5C3CE29A" Ref="#PWR03"  Part="1" 
+AR Path="/5C3DAC44/5C3CE29A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR03" H 5950 2500 50  0001 C CNN
+F 1 "GND" V 5955 2622 50  0000 R CNN
+F 2 "" H 5950 2750 50  0001 C CNN
+F 3 "" H 5950 2750 50  0001 C CNN
+	1    5950 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C3CE2D9
+P 5950 3000
+AR Path="/5C3CC8C7/5C3CE2D9" Ref="#PWR04"  Part="1" 
+AR Path="/5C3DAC44/5C3CE2D9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR04" H 5950 2750 50  0001 C CNN
+F 1 "GND" V 5955 2872 50  0000 R CNN
+F 2 "" H 5950 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5C3DB350
+P 5950 3650
+AR Path="/5C3CC8C7/5C3DB350" Ref="#PWR05"  Part="1" 
+AR Path="/5C3DAC44/5C3DB350" Ref="#PWR?"  Part="1" 
+F 0 "#PWR05" H 5950 3400 50  0001 C CNN
+F 1 "GND" V 5955 3522 50  0000 R CNN
+F 2 "" H 5950 3650 50  0001 C CNN
+F 3 "" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5C3DB351
+P 5950 3900
+AR Path="/5C3CC8C7/5C3DB351" Ref="#PWR06"  Part="1" 
+AR Path="/5C3DAC44/5C3DB351" Ref="#PWR?"  Part="1" 
+F 0 "#PWR06" H 5950 3650 50  0001 C CNN
+F 1 "GND" V 5955 3772 50  0000 R CNN
+F 2 "" H 5950 3900 50  0001 C CNN
+F 3 "" H 5950 3900 50  0001 C CNN
+	1    5950 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5C3DB352
+P 5950 4150
+AR Path="/5C3CC8C7/5C3DB352" Ref="#PWR07"  Part="1" 
+AR Path="/5C3DAC44/5C3DB352" Ref="#PWR?"  Part="1" 
+F 0 "#PWR07" H 5950 3900 50  0001 C CNN
+F 1 "GND" V 5955 4022 50  0000 R CNN
+F 2 "" H 5950 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 2350 5250 2100
+Wire Wire Line
+	5650 2600 6300 2600
+Wire Wire Line
+	6300 2600 6300 2300
+Wire Wire Line
+	6300 2300 7150 2300
+Wire Wire Line
+	5650 2750 5650 2600
+Connection ~ 5650 2600
+Wire Wire Line
+	5650 3000 5650 2850
+Wire Wire Line
+	5650 2850 6350 2850
+Wire Wire Line
+	6350 2850 6350 2400
+Wire Wire Line
+	6350 2400 7150 2400
+Connection ~ 5650 2850
+Wire Wire Line
+	6400 2500 7150 2500
+Wire Wire Line
+	5650 3650 5650 3500
+Wire Wire Line
+	5650 3500 6450 3500
+Wire Wire Line
+	6450 2600 7150 2600
+Connection ~ 5650 3500
+Wire Wire Line
+	5650 3900 5650 3750
+Wire Wire Line
+	5650 3750 6500 3750
+Wire Wire Line
+	6500 2700 7150 2700
+Connection ~ 5650 3750
+Wire Wire Line
+	5650 4150 5650 4000
+Wire Wire Line
+	5650 4000 6550 4000
+Wire Wire Line
+	6550 2800 7150 2800
+Connection ~ 5650 4000
+Wire Wire Line
+	5250 2600 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5250 2850 5250 2600
+Connection ~ 5250 2600
+Connection ~ 5250 2850
+Wire Wire Line
+	5250 3750 5250 3500
+Connection ~ 5250 3500
+Wire Wire Line
+	5250 4000 5250 3750
+Connection ~ 5250 3750
+Wire Wire Line
+	6400 2500 6400 3200
+Wire Wire Line
+	6450 2600 6450 3500
+Wire Wire Line
+	6500 2700 6500 3750
+Wire Wire Line
+	6550 2800 6550 4000
+Wire Wire Line
+	5250 2850 5250 3200
+$Comp
+L Device:R_US R4
+U 1 1 5C3DB353
+P 5400 3200
+AR Path="/5C3CC8C7/5C3DB353" Ref="R4"  Part="1" 
+AR Path="/5C3DAC44/5C3DB353" Ref="R?"  Part="1" 
+F 0 "R4" V 5300 3150 50  0000 C CNN
+F 1 "10k" V 5300 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5440 3190 50  0001 C CNN
+F 3 "~" H 5400 3200 50  0001 C CNN
+	1    5400 3200
+	0    1    1    0   
+$EndComp
+Connection ~ 5250 3200
+Wire Wire Line
+	5250 3200 5250 3500
+Wire Wire Line
+	5550 3200 6300 3200
+Text HLabel 6150 3300 0    50   Input ~ 0
+Stick_Button0
+Wire Wire Line
+	6150 3300 6300 3300
+Wire Wire Line
+	6300 3300 6300 3200
+Connection ~ 6300 3200
+Wire Wire Line
+	6300 3200 6400 3200
+$EndSCHEMATC

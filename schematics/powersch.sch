@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+LIBS:DuinoCon-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED_RABG D1
+U 1 1 5D3E8CE6
+P 8900 3550
+F 0 "D1" H 8900 4047 50  0000 C CNN
+F 1 "LED_RABG" H 8900 3956 50  0000 C CNN
+F 2 "" H 8900 3500 50  0001 C CNN
+F 3 "~" H 8900 3500 50  0001 C CNN
+	1    8900 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7400 3200
+$Comp
+L power:+5V #PWR028
+U 1 1 5D3F8DDF
+P 9300 3000
+F 0 "#PWR028" H 9300 2850 50  0001 C CNN
+F 1 "+5V" H 9315 3173 50  0000 C CNN
+F 2 "" H 9300 3000 50  0001 C CNN
+F 3 "" H 9300 3000 50  0001 C CNN
+	1    9300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW4
+U 1 1 5D3F93CC
+P 7600 3850
+F 0 "SW4" H 8000 3850 50  0000 C CNN
+F 1 "SW_SPDT" H 8000 3750 50  0000 C CNN
+F 2 "" H 7600 3850 50  0001 C CNN
+F 3 "" H 7600 3850 50  0001 C CNN
+	1    7600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:PowerBoost1000c U6
+U 1 1 5D3FA2B5
+P 6950 3050
+F 0 "U6" H 6981 3125 50  0000 C CNN
+F 1 "PowerBoost1000c" H 6981 3034 50  0000 C CNN
+F 2 "" H 6950 3050 50  0001 C CNN
+F 3 "" H 6950 3050 50  0001 C CNN
+	1    6950 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7400 3550
+Wire Wire Line
+	7400 4300 7400 4000
+NoConn ~ 8700 3750
+$Comp
+L Device:R R16
+U 1 1 5D50C2AD
+P 7900 3350
+F 0 "R16" V 7693 3350 50  0000 C CNN
+F 1 "100" V 7784 3350 50  0000 C CNN
+F 2 "" V 7830 3350 50  0001 C CNN
+F 3 "~" H 7900 3350 50  0001 C CNN
+	1    7900 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3350 7750 3350
+$Comp
+L left_buttons-eagle-import:GND #GND0101
+U 1 1 5D50C5B2
+P 8300 3650
+F 0 "#GND0101" H 8300 3650 50  0001 C CNN
+F 1 "GND" H 8300 3529 59  0000 C CNN
+F 2 "" H 8300 3650 50  0001 C CNN
+F 3 "" H 8300 3650 50  0001 C CNN
+	1    8300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4300 7800 4300
+Wire Wire Line
+	7800 4300 7800 3950
+Wire Wire Line
+	8050 3350 8700 3350
+Wire Wire Line
+	9100 3550 9300 3550
+Wire Wire Line
+	9300 3550 9300 3000
+$Comp
+L Device:R R17
+U 1 1 5D50C9DC
+P 8500 3550
+F 0 "R17" V 8600 3550 50  0000 C CNN
+F 1 "10k" V 8700 3550 50  0000 C CNN
+F 2 "" V 8430 3550 50  0001 C CNN
+F 3 "~" H 8500 3550 50  0001 C CNN
+	1    8500 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 3550 8650 3550
+Wire Wire Line
+	8350 3550 8300 3550
+NoConn ~ 7400 3700
+Wire Wire Line
+	7800 3750 7800 3450
+Wire Wire Line
+	7800 3450 7400 3450
+$EndSCHEMATC

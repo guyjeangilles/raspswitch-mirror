@@ -1,9 +1,19 @@
 ----
 # Table of Contents #
-{:.not_toc}
+* [Introduction](#introduction)
+* [Design Overview](#design-overview)
+  * [Console](#console)
+  * [DuinoCon](#duinocon)
+* [Full Component List](#component_list)
+* [Setting up the blueSMIRF as an HID Device](#setting_up_the_blueSMIRF)
+* [Test The Gamepad Functionality](#test_the_gamepad)
+* [Setting Up RetroPie](#setting_up_retropie)
+* [Mechanical Assembly Sanity Check](#mechanical_assembly)
+* [Full Assembly](#full_assembly)
+  * [Console Assembly](#console_assembly)
+  * [Gamepad Assembly](#gamepad_assembly)
 
-- TOC
-{:toc}
+
 ----
 **This repo is hosted on [Gitlab](https://gitlab.com/guyjeangilles/raspswitch.git). Any issues or pull requests on Github will be ignored and closed.**
 
@@ -20,10 +30,12 @@ variants is a DIY bluetooth, collapsible gamepad deemed the _DuinCon_.
 ![alt text](./images/finished_assembled_console.jpg "Finished Assembled Console")
 ![alt text](./images/finished_detached_console.jpg "Finished Detached Gamepad")
 
+<a name="design-overview"></a>
 # Design Overview #
 Below are wiring diagrams of the RaspSwitch. These are for **reference only**.
 Make sure you understand each component's function.
 
+<a name="console"></a>
 ## Console ##
 
 ![alt text](./images/console_fritzing.png)
@@ -32,6 +44,7 @@ The console consists of a Raspberry Pi 3 A+ and the HyperPixel 4.0 as the displa
 
 _NOTE: I want to reiterate that the above is just for reference. Several elements are not in the fritzing diagram including the HyperPixel 4.0, USB cable from the PowerBoost 1000c, etc._
 
+<a name="duinocon"></a>
 ## DuinoCon ##
 
 ![alt text](./images/duinocon.png "DuinoCon Fritzing Diagram")
